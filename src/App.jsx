@@ -1,11 +1,10 @@
 import React from "react";
 import Background from "./components/Background";
 import Formation from "./components/Formation";
-import Github from "./components/icons/Github";
-import Linkedin from "./components/icons/Linkedin";
 import Info from "./components/Info";
 import Projects from "./components/Projects";
 import ReactGA from "react-ga4";
+import SocialNavBarItems from "./components/SocialNavBarItems";
 
 function App() {
 	React.useEffect(() => {
@@ -17,49 +16,10 @@ function App() {
 		});
 	}, []);
 
-	const handleGithubButtonClick = () => {
-		ReactGA.event({
-			category: "User",
-			action: "Clicked Github Button",
-			label: "Github",
-		});
-	};
-
-	const handlLinkedinButtonClick = () => {
-		ReactGA.event({
-			category: "User",
-			action: "Linkedin Github Button",
-			label: "Linkedin",
-		});
-	};
-
 	return (
 		<main>
 			<div class="fixed top-0 z-[-2] w-full h-full bg-neutral-950 bg-[radial-gradient(#262626_1px,#0a0a0a_1px)] bg-[size:20px_20px]"></div>
-
-			<div className="z-50 mt-3 sticky top-3 w-fit left-1/2">
-				<div className="p-2 bg-neutral-900/70 border rounded-full w-full border-neutral-600/70 flex items-center justify-center backdrop-blur-sm">
-					<a
-						href="https://github.com/Ilyasse-Fouaide"
-						target="_blank"
-						className="pr-3 border-r border-neutral-600/70"
-						onClick={handleGithubButtonClick}
-						aria-label="Cliquez ici pour visiter ma page GitHub."
-					>
-						<Github />
-					</a>
-					<a
-						href="https://www.linkedin.com/in/ilyasse-fouaide/"
-						target="_blank"
-						className="pl-3 mr-1"
-						onClick={handlLinkedinButtonClick}
-						aria-label="Cliquez ici pour visiter ma page Linkedin."
-					>
-						<Linkedin />
-					</a>
-				</div>
-			</div>
-
+			<SocialNavBarItems />
 			<div className="max-w-5xl m-auto">
 				<Info />
 				<Background />

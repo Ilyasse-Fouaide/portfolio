@@ -1,6 +1,6 @@
 import React from "react";
 import Description from "./Description";
-import bg_pattern from "../assets/images/geometric-pattern.png";
+import bg_pattern from "../assets/images/geometric-pattern.webp";
 
 function Background() {
 	return (
@@ -24,6 +24,7 @@ function Background() {
 				</div>
 				{/* Background */}
 				<div
+					rel="preload"
 					className={`w-1/2 bg-cover bg-no-repeat bg-center rounded-s-2xl`}
 					style={{ backgroundImage: `url('${bg_pattern}')` }}
 				></div>
