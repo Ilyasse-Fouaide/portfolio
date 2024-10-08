@@ -5,13 +5,33 @@ import Github from "./components/icons/Github";
 import Linkedin from "./components/icons/Linkedin";
 import Info from "./components/Info";
 import Projects from "./components/Projects";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 function App() {
 	React.useEffect(() => {
 		ReactGA.initialize("G-GDMS00V7HH");
-		ReactGA.pageview(window.location.pathname + window.location.search);
+		ReactGA.send({
+			hitType: "pageview",
+			page: window.location.pathname + window.location.search,
+			title: "Ilyasse FOUAIDE - Développeur web",
+		});
 	}, []);
+
+	const handleGithubButtonClick = () => {
+		ReactGA.event({
+			category: "User",
+			action: "Clicked Github Button",
+			label: "Github",
+		});
+	};
+
+	const handlLinkedinButtonClick = () => {
+		ReactGA.event({
+			category: "User",
+			action: "Linkedin Github Button",
+			label: "Linkedin",
+		});
+	};
 
 	return (
 		<main>
@@ -23,6 +43,7 @@ function App() {
 						href="https://github.com/Ilyasse-Fouaide"
 						target="_blank"
 						className="pr-3 border-r border-neutral-600/70"
+						onClick={handleGithubButtonClick}
 					>
 						<Github />
 					</a>
@@ -30,6 +51,7 @@ function App() {
 						href="https://www.linkedin.com/in/ilyasse-fouaide/"
 						target="_blank"
 						className="pl-3 mr-1"
+						onClick={handlLinkedinButtonClick}
 					>
 						<Linkedin />
 					</a>

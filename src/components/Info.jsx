@@ -4,7 +4,7 @@ import pfp from "../assets/images/Ilyasse_Fouaide.png";
 import Item from "./Item";
 import ButtonInfo from "./ButtonInfo";
 import Download from "./icons/Download";
-import Banner from "./Banner";
+import ReactGA from "react-ga4";
 
 const info = [
 	{ name: "Téléphone", value: "06 70 22 85 67" },
@@ -33,6 +33,14 @@ const skills = [
 ];
 
 function Info() {
+	const handleCVButtonClick = () => {
+		ReactGA.event({
+			category: "User",
+			action: "Clicked CV Button",
+			label: "CV",
+		});
+	};
+
 	return (
 		<Item className={`mt-3`}>
 			<div className="relative z-10 w-full h-36">
@@ -109,7 +117,10 @@ function Info() {
 					{/* <button className="px-4 py-1 mt-5 text-xs transition-colors rounded-md bg-sky-600 hover:bg-sky-700">
 						Mon Portfolio
 					</button> */}
-					<button class="relative group px-4 py-1 mt-5 text-xs">
+					<button
+						class="relative group px-4 py-1 mt-5 text-xs"
+						onClick={handleCVButtonClick}
+					>
 						<a
 							href="https://drive.google.com/file/d/1qIEz0dyzDoJkz6Qn-9PbryH0WmATqFNM/view?usp=sharing"
 							target="_blank"
