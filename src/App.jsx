@@ -44,6 +44,7 @@ function App() {
 						target="_blank"
 						className="pr-3 border-r border-neutral-600/70"
 						onClick={handleGithubButtonClick}
+						aria-label="Cliquez ici pour visiter ma page GitHub."
 					>
 						<Github />
 					</a>
@@ -52,6 +53,7 @@ function App() {
 						target="_blank"
 						className="pl-3 mr-1"
 						onClick={handlLinkedinButtonClick}
+						aria-label="Cliquez ici pour visiter ma page Linkedin."
 					>
 						<Linkedin />
 					</a>

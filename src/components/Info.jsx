@@ -102,9 +102,9 @@ function Info() {
 				</div>
 
 				<div className="relative z-10 w-1/2 mt-16">
-					<h2 className="text-2xl font-playfair text-neutral-50">
+					<h1 className="text-2xl font-playfair text-neutral-50">
 						Ilyasse FOUAIDE
-					</h2>
+					</h1>
 					<div className="inline-flex items-center justify-center gap-2 mt-1 text-xs text-neutral-400">
 						<span>
 							<Location />
@@ -124,6 +124,7 @@ function Info() {
 						<a
 							href="https://drive.google.com/file/d/1qIEz0dyzDoJkz6Qn-9PbryH0WmATqFNM/view?usp=sharing"
 							target="_blank"
+							aria-label="Cliquez ici pour télécharger mon CV."
 						>
 							<span class="absolute inset-0 w-full h-full transition duration-400 ease-out transform translate-x-1 translate-y-1 bg-indigo-200 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
 							<span class="absolute inset-0 w-full h-full bg-[#3b34c8] border border-indigo-300 group-hover:bg-indigo-600"></span>

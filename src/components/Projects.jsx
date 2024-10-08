@@ -37,7 +37,7 @@ function Projects() {
 					</Description>
 				</div>
 				<div className="w-[30%]">
-					<h5 className="mb-1 text-sm text-neutral-300">Tools:</h5>
+					<h3 className="mb-1 text-sm text-neutral-300">Tools:</h3>
 					<div className="flex flex-wrap items-center gap-1 text-[10px]">
 						{toolsProject1.map((tool, key) => (
 							<ButtonInfo key={key}>{tool.name}</ButtonInfo>
@@ -58,7 +58,7 @@ function Projects() {
 					</Description>
 				</div>
 				<div className="w-[30%]">
-					<h5 className="mb-1 text-sm text-neutral-300">Tools:</h5>
+					<h3 className="mb-1 text-sm text-neutral-300">Tools:</h3>
 					<div className="flex flex-wrap items-center gap-1 text-[10px]">
 						{toolsProject2.map((tool, key) => (
 							<ButtonInfo key={key}>{tool.name}</ButtonInfo>
