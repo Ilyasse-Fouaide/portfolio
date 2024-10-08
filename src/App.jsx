@@ -5,8 +5,14 @@ import Github from "./components/icons/Github";
 import Linkedin from "./components/icons/Linkedin";
 import Info from "./components/Info";
 import Projects from "./components/Projects";
+import ReactGA from "react-ga";
 
 function App() {
+	React.useEffect(() => {
+		ReactGA.initialize("G-GDMS00V7HH");
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	return (
 		<main>
 			<div class="fixed top-0 z-[-2] w-full h-full bg-neutral-950 bg-[radial-gradient(#262626_1px,#0a0a0a_1px)] bg-[size:20px_20px]"></div>
