@@ -32,7 +32,7 @@ const skills = [
 	{ name: "Tailwind Css" },
 ];
 
-function Info() {
+function Info({ setNameHover }) {
 	const handleCVButtonClick = () => {
 		ReactGA.event({
 			category: "User",
@@ -43,9 +43,9 @@ function Info() {
 
 	return (
 		<Item className={`mt-3`}>
-			<div className="relative z-10 w-full h-36">
+			<div className="relative w-full h-36">
 				{/* <Banner /> */}
-				<div className="pointer-events-none z-0 absolute inset-0 rotate-180 bg-[linear-gradient(to_right,#404040_1px,transparent_1px),linear-gradient(to_bottom,#404040_1px,transparent_1px)] bg-[size:18px_28px] [mask-image:radial-gradient(ellipse_80%_80%_at_60%_0%,#000_50%,transparent_100%)]"></div>
+				<div className="pointer-events-none absolute inset-0 rotate-180 bg-[linear-gradient(to_right,#404040_1px,transparent_1px),linear-gradient(to_bottom,#404040_1px,transparent_1px)] bg-[size:18px_28px] [mask-image:radial-gradient(ellipse_80%_80%_at_60%_0%,#000_50%,transparent_100%)]"></div>
 				<div className="absolute bottom-0 translate-y-1/2 w-[140px] aspect-square left-8 bg-neutral-600 rounded-full ring-4 ring-neutral-900 border-none overflow-hidden">
 					<img
 						src={pfp}
@@ -101,8 +101,12 @@ function Info() {
 					</div>
 				</div>
 
-				<div className="relative z-10 w-1/2 mt-16">
-					<h1 className="text-2xl font-playfair text-neutral-50">
+				<div className="relative w-1/2 mt-16">
+					<h1
+						className={`text-2xl font-playfair text-neutral-50`}
+						onMouseEnter={() => setNameHover(true)}
+						onMouseLeave={() => setNameHover(false)}
+					>
 						Ilyasse FOUAIDE
 					</h1>
 					<div className="inline-flex items-center justify-center gap-2 mt-1 text-xs text-neutral-400">

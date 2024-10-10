@@ -21,8 +21,8 @@ function SocialNavBarItems() {
 	};
 
 	return (
-		<nav className="z-50 mt-3 sticky top-3 w-fit left-1/2">
-			<ul className="p-2 bg-neutral-900/70 border rounded-full w-full border-neutral-600/70 flex items-center justify-center backdrop-blur-sm">
+		<nav className="sticky z-10 mt-3 top-3 w-fit left-1/2">
+			<ul className="flex items-center justify-center w-full p-2 border rounded-full bg-neutral-900/70 border-neutral-600/70 backdrop-blur-sm">
 				<li className="pr-3 border-r border-neutral-600/70">
 					<a
 						href="https://github.com/Ilyasse-Fouaide"
