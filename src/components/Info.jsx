@@ -1,6 +1,6 @@
 import React from "react";
 import Location from "./icons/Location";
-import pfp from "../assets/images/Ilyasse_Fouaide.png";
+import pfp from "../assets/images/Luxurious Rugs.jpeg";
 import Item from "./Item";
 import ButtonInfo from "./ButtonInfo";
 import Download from "./icons/Download";
@@ -126,7 +126,7 @@ function Info({ setNameHover }) {
 						onClick={handleCVButtonClick}
 					>
 						<a
-							href="https://drive.google.com/file/d/1qIEz0dyzDoJkz6Qn-9PbryH0WmATqFNM/view?usp=sharing"
+							href="https://google.com"
 							target="_blank"
 							aria-label="Cliquez ici pour télécharger mon CV."
 						>
