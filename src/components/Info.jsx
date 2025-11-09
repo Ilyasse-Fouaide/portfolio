@@ -1,6 +1,6 @@
 import React from "react";
 import Location from "./icons/Location";
-import pfp from "../assets/images/Luxurious Rugs.jpeg";
+import pfp from "../assets/images/geometric-pattern.webp";
 import Item from "./Item";
 import ButtonInfo from "./ButtonInfo";
 import Download from "./icons/Download";
