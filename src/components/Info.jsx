@@ -56,11 +56,6 @@ function Info({ setNameHover }) {
         height="750"
         className="transition-all duration-300 hover:scale-110"
       />
-					// <img
-					// 	src={pfp}
-					// 	alt="ilyasse fouaide profile picture w-full h-full pointer-events-none"
-					// 	className="transition-all duration-300 hover:scale-110"
-					// />
 				</div>
 			</div>
 			{/* Name - Location - Role */}
