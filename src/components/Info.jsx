@@ -47,15 +47,15 @@ function Info({ setNameHover }) {
 				{/* <Banner /> */}
 				<div className="pointer-events-none absolute inset-0 rotate-180 bg-[linear-gradient(to_right,#404040_1px,transparent_1px),linear-gradient(to_bottom,#404040_1px,transparent_1px)] bg-[size:18px_28px] [mask-image:radial-gradient(ellipse_80%_80%_at_60%_0%,#000_50%,transparent_100%)]"></div>
 				<div className="absolute bottom-0 translate-y-1/2 w-[140px] aspect-square left-8 bg-neutral-600 rounded-full ring-4 ring-neutral-900 border-none overflow-hidden">
-    <img
-    srcset="Luxurious-Rugs-400w.webp 400w"
-    sizes=""
-    src={pfp}
-    alt="ilyasse fouaide profile picture w-full h-full pointer-events-none""
-    width="516"
-    height="750"
-    className="transition-all duration-300 hover:scale-110"
-    />
+      <img
+        srcset="Luxurious-Rugs-400w.webp 400w"
+        sizes=""
+        src={pfp}
+        alt="ilyasse fouaide profile picture w-full h-full pointer-events-none"
+        width="516"
+        height="750"
+        className="transition-all duration-300 hover:scale-110"
+      />
 					// <img
 					// 	src={pfp}
 					// 	alt="ilyasse fouaide profile picture w-full h-full pointer-events-none"
